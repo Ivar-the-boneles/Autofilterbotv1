@@ -33,7 +33,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                            InlineKeyboardButton("📢 Join Updates Channel 📢", url=https://t.me/Nonofcomedychannel)
                         ]
                     ]
                 ),
@@ -243,7 +243,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             try:
                 data = BUTTONS[keyword]
             except KeyError:
-                await query.answer("You are using this for one of my old message, please send the request again.",show_alert=True)
+                await query.answer("ഡേയ് ഇത് പയേ.. മെസ്സേജ് എടുക്കാൻ കയ്യ .",show_alert=True)
                 return
 
             if int(index) == 1:
@@ -277,7 +277,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "help":
             buttons = [
                 [
-                    InlineKeyboardButton('Making Video', url=f'{TUTORIAL}')
+                    InlineKeyboardButton('SUB MY CGANNEL', url=f'https://www.youtube.com/channel/UCvSF3ur0GFRcsTxaOnLlWJA')
                 ]
                 ]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -285,7 +285,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Making Video', url=f'{TUTORIAL}')
+                    InlineKeyboardButton('SUB MY CHANNEL', url=f'https://www.youtube.com/channel/UCvSF3ur0GFRcsTxaOnLlWJA}')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -308,7 +308,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('SUB MY CHANNEL', url=f'https://www.youtube.com/channel/UCvSF3ur0GFRcsTxaOnLlWJA')
                     ]
                     ]
                 
@@ -321,7 +321,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+                await query.answer("ഡേയ് നിന്റെ ചാട്ടം എങ്ങോട്ടെന്ന് എനിക്ക് മനസ്സിലാവുന്നുണ്ട് ",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -339,7 +339,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('SUB MY CHANNEL', url=f'https://www.youtube.com/channel/UCvSF3ur0GFRcsTxaOnLlWJA')
                     ]
                     ]
                 
